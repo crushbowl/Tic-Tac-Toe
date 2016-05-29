@@ -20,7 +20,8 @@
 @property (weak, nonatomic) IBOutlet UIButton *buttonNine;
 @property (weak, nonatomic) IBOutlet UILabel *whichPlayerLabel;
 @property (strong, nonatomic) IBOutletCollection(UIButton) NSArray *buttons;
-
+- (IBAction)saveCurrentPosition:(UIButton *)sender;
+@property NSString *someLocalField;
 
 @property BOOL isX;
 @property BOOL shouldSave;
@@ -39,15 +40,20 @@
 // When a user clicks on a button, the sender (indiv button) fires and records the current Player Label
 // in the button Title text
 
+// Also adds color to X (blue) or O (red) depending on click/turn.
 -(IBAction)onButtonTapped:(UIButton *)sender {
     int x = 1;
     for (UIButton *button in self.buttons) {
         if (sender == button) {
             [button setTitle:self.whichPlayerLabel.text forState:UIControlStateNormal];
             [button setTitleColor: self.whichPlayerLabel.textColor forState:UIControlStateNormal];
-            NSLog(@"Button #: %i - Name: %@",x,button.titleLabel.text); }
+            
+            
+//            NSLog(@"Button #: %i - Name: %@",x,button.titleLabel.text);
+        }
         x++;
     }
+    
     [self showCurrentPlayer];
 }
 
@@ -57,21 +63,24 @@
 
     if (self.isX) {
         self.whichPlayerLabel.text = @"X";
+        self.whichPlayerLabel.textColor = [UIColor blueColor];
     } else {
         self.whichPlayerLabel.text = @"O";
+        self.whichPlayerLabel.textColor = [UIColor redColor];
+
     }
 
     // label color
 }
 
 
--(void)saveCurrentPosition {
+-(IBAction)saveCurrentPosition:(UIButton *)sender {
     
-    if (self.shouldSave) {
-        self.whichPlayerLabel.text = @"X";
-    } else {
-        self.whichPlayerLabel.text = @"0";
-    }
+  NSString *title = [(UIButton *)sender currentTitle];
+    
+    sender.titleLabel.text = title;
+    [sender setUserInteractionEnabled:NO];
+    NSLog(@"%@", title);
 
 }
 
