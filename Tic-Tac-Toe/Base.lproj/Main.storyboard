@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10116" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10116" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="BYZ-38-t0r">
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
@@ -14,87 +14,78 @@
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PFr-Kl-JRk" userLabel="ButtonOne">
-                                <rect key="frame" x="193" y="153" width="46" height="30"/>
+                                <rect key="frame" x="42" y="122" width="46" height="30"/>
                                 <state key="normal" title="Button"/>
                                 <connections>
                                     <action selector="onButtonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Mxx-n8-8zx"/>
-                                    <action selector="saveCurrentPosition:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Uk3-g0-Lae"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wAD-4q-OkA" userLabel="ButtonTwo">
-                                <rect key="frame" x="286" y="153" width="46" height="30"/>
-                                <state key="normal" title="Button"/>
-                                <connections>
-                                    <action selector="onButtonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="zII-QN-9Li"/>
-                                    <action selector="saveCurrentPosition:" destination="BYZ-38-t0r" eventType="touchUpInside" id="08n-LN-HzD"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="AxL-yt-GWX" userLabel="ButtonThree">
-                                <rect key="frame" x="383" y="153" width="46" height="30"/>
+                                <rect key="frame" x="232" y="122" width="46" height="30"/>
                                 <state key="normal" title="Button"/>
                                 <connections>
                                     <action selector="onButtonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="ipq-Jo-VRj"/>
-                                    <action selector="saveCurrentPosition:" destination="BYZ-38-t0r" eventType="touchUpInside" id="dCm-75-eSb"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UUG-jl-zeH" userLabel="ButtonFour">
-                                <rect key="frame" x="193" y="198" width="46" height="30"/>
+                                <rect key="frame" x="42" y="167" width="46" height="30"/>
                                 <state key="normal" title="Button"/>
                                 <connections>
                                     <action selector="onButtonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="lsu-zi-wDK"/>
-                                    <action selector="saveCurrentPosition:" destination="BYZ-38-t0r" eventType="touchUpInside" id="3MD-Uz-mkC"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="r17-Ns-zP5" userLabel="ButtonFive">
-                                <rect key="frame" x="286" y="198" width="46" height="30"/>
-                                <state key="normal" title="Button"/>
-                                <connections>
-                                    <action selector="onButtonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="5EI-0Y-uL4"/>
-                                    <action selector="saveCurrentPosition:" destination="BYZ-38-t0r" eventType="touchUpInside" id="sCL-Oe-GUN"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WS3-gg-SnX" userLabel="ButtonSix">
-                                <rect key="frame" x="383" y="198" width="46" height="30"/>
+                                <rect key="frame" x="232" y="167" width="46" height="30"/>
                                 <state key="normal" title="Button"/>
                                 <connections>
                                     <action selector="onButtonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="VgE-8Z-trI"/>
-                                    <action selector="saveCurrentPosition:" destination="BYZ-38-t0r" eventType="touchUpInside" id="HRH-4X-IGJ"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lHZ-Aa-DyA" userLabel="ButtonSeven">
-                                <rect key="frame" x="193" y="245" width="46" height="30"/>
+                                <rect key="frame" x="42" y="214" width="46" height="30"/>
                                 <state key="normal" title="Button"/>
                                 <connections>
                                     <action selector="onButtonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="B8J-jc-X1x"/>
-                                    <action selector="saveCurrentPosition:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Qq2-ux-rk0"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Su9-4I-fzm" userLabel="ButtonEight">
-                                <rect key="frame" x="286" y="245" width="46" height="30"/>
-                                <state key="normal" title="Button"/>
-                                <connections>
-                                    <action selector="onButtonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="80u-ci-uWX"/>
-                                    <action selector="saveCurrentPosition:" destination="BYZ-38-t0r" eventType="touchUpInside" id="wq2-E8-Y87"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sXV-gj-qqR" userLabel="ButtonNine">
-                                <rect key="frame" x="383" y="245" width="46" height="30"/>
+                                <rect key="frame" x="232" y="214" width="46" height="30"/>
                                 <state key="normal" title="Button"/>
                                 <connections>
                                     <action selector="onButtonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Wan-QE-eQM"/>
-                                    <action selector="saveCurrentPosition:" destination="BYZ-38-t0r" eventType="touchUpInside" id="6PX-lx-AfF"/>
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zpi-gV-EjJ">
-                                <rect key="frame" x="290" y="306" width="42" height="21"/>
+                                <rect key="frame" x="139" y="275" width="42" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wAD-4q-OkA" userLabel="ButtonTwo">
+                                <rect key="frame" x="135" y="122" width="46" height="30"/>
+                                <state key="normal" title="Button"/>
+                                <connections>
+                                    <action selector="onButtonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="zII-QN-9Li"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="r17-Ns-zP5" userLabel="ButtonFive">
+                                <rect key="frame" x="135" y="167" width="46" height="30"/>
+                                <state key="normal" title="Button"/>
+                                <connections>
+                                    <action selector="onButtonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="5EI-0Y-uL4"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Su9-4I-fzm" userLabel="ButtonEight">
+                                <rect key="frame" x="135" y="214" width="46" height="30"/>
+                                <state key="normal" title="Button"/>
+                                <connections>
+                                    <action selector="onButtonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="80u-ci-uWX"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
@@ -118,10 +109,35 @@
                         <outletCollection property="buttons" destination="lHZ-Aa-DyA" id="1Kb-nR-9zN"/>
                         <outletCollection property="buttons" destination="Su9-4I-fzm" id="R4x-RT-tk9"/>
                         <outletCollection property="buttons" destination="sXV-gj-qqR" id="LJW-F0-xuu"/>
+                        <outletCollection property="winningCombo1" destination="wAD-4q-OkA" id="bdg-eu-OWb"/>
+                        <outletCollection property="winningCombo2" destination="r17-Ns-zP5" id="FxU-wo-uvn"/>
+                        <outletCollection property="winningCombo3" destination="Su9-4I-fzm" id="Ws7-l7-0pV"/>
+                        <outletCollection property="winningCombo4" destination="UUG-jl-zeH" id="Y3C-0L-MTQ"/>
+                        <outletCollection property="winningCombo6" destination="WS3-gg-SnX" id="MoK-hq-OTx"/>
+                        <outletCollection property="winningCombo5" destination="r17-Ns-zP5" id="0gw-bZ-fHo"/>
+                        <outletCollection property="winningCombo7" destination="r17-Ns-zP5" id="tQt-nZ-Qkv"/>
+                        <outletCollection property="winningCombo8" destination="lHZ-Aa-DyA" id="isD-Y4-YBw"/>
+                        <outletCollection property="winningCombo1" destination="PFr-Kl-JRk" id="cp1-eA-R5M"/>
+                        <outletCollection property="winningCombo1" destination="AxL-yt-GWX" id="fBg-0r-cVo"/>
+                        <outletCollection property="winningCombo2" destination="UUG-jl-zeH" id="C5Q-qb-gyX"/>
+                        <outletCollection property="winningCombo2" destination="WS3-gg-SnX" id="9yq-tJ-PTR"/>
+                        <outletCollection property="winningCombo3" destination="lHZ-Aa-DyA" id="gY2-3y-Pyp"/>
+                        <outletCollection property="winningCombo3" destination="sXV-gj-qqR" id="4zt-mP-CkM"/>
+                        <outletCollection property="winningCombo4" destination="PFr-Kl-JRk" id="1Pu-GM-eyi"/>
+                        <outletCollection property="winningCombo4" destination="lHZ-Aa-DyA" id="sSY-ge-Dyf"/>
+                        <outletCollection property="winningCombo5" destination="wAD-4q-OkA" id="fa4-42-bJr"/>
+                        <outletCollection property="winningCombo5" destination="Su9-4I-fzm" id="kWK-PS-8Tp"/>
+                        <outletCollection property="winningCombo6" destination="AxL-yt-GWX" id="Zgd-Gj-IQN"/>
+                        <outletCollection property="winningCombo6" destination="sXV-gj-qqR" id="Bpv-RW-XQ6"/>
+                        <outletCollection property="winningCombo8" destination="r17-Ns-zP5" id="YaU-4t-QLq"/>
+                        <outletCollection property="winningCombo8" destination="AxL-yt-GWX" id="iuK-qF-Ohl"/>
+                        <outletCollection property="winningCombo7" destination="PFr-Kl-JRk" id="UBm-OL-PTC"/>
+                        <outletCollection property="winningCombo7" destination="sXV-gj-qqR" id="Rq5-gG-sWa"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="157.33333333333334" y="229.56666666666666"/>
         </scene>
     </scenes>
 </document>
